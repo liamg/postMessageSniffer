@@ -1,0 +1,28 @@
+{
+  "background": {
+    "scripts": []
+  },
+  "browser_action": {
+    "default_icon": {
+
+    }
+  },
+  "description": "",
+  "icons": {
+
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["sniff.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "PostMessage Sniffer",
+  "web_accessible_resources": [],
+  "permissions": [ "http://*/*", "https://*/*" ]
+}
